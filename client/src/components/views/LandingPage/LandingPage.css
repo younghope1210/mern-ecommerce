@@ -1,0 +1,91 @@
+
+
+
+.Hero {
+
+    width:100; 
+    height:250px;
+    background:url("https://res.cloudinary.com/seoyoung/image/upload/v1680577644/sakura-4071571_y5mmyr.jpg") no-repeat -30px -1000px;
+    object-fit:cover; 
+    text-align:center;
+    line-height:250px;
+    color:#fff; 
+    font-size:18px;
+    animation: motion 20s linear 0s infinite alternate; margin-top: 0;
+}
+
+
+@keyframes motion {
+	0% {background:url("https://res.cloudinary.com/seoyoung/image/upload/v1680577644/sakura-4071571_y5mmyr.jpg") no-repeat -30px -800px;}
+	100% {background:url("https://res.cloudinary.com/seoyoung/image/upload/v1680577644/sakura-4071571_y5mmyr.jpg") no-repeat -30px -1000px;}
+}
+
+
+
+.CardInfo:hover {
+    
+    transition: 1s;
+    box-shadow: 3px 3px 3px 3px #ccc;
+}
+
+
+.ImgCon {
+    width:100%; 
+    margin: 5rem auto;
+    display:flex; 
+    flex-wrap:wrap;
+   
+}
+
+.ImgCon div{
+
+    width:32%;
+    position:relative;
+    display:flex;
+    overflow:hidden;
+    margin-left:1%; 
+    border-radius: 10px;
+ 
+
+}
+
+.ImgCon div img {
+
+   width:100%;
+   height:250px;
+   
+}
+
+
+.ImgCon div img:hover{
+    transform:scale(1.1); 
+    transition: transform 1s; 
+}
+
+.ImgCon div p{
+
+    position:absolute; 
+    top:50%; 
+    left:50%; 
+    transform:translate(-50%, -50%);
+    color:#fff;
+    padding:8px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+  @media screen and (max-width: 900px) {
+
+   
+    
+    .ImgCon div{
+        margin:0 auto;
+        width:100%;
+        position:relative;
+        display:flex;
+        margin-bottom:1rem;
+    
+    }
+
+ 
+  }
